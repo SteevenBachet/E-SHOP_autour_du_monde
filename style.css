@@ -327,6 +327,11 @@ header {
     top: 0px;
     border-radius: 0;
 }
+.btn-explorer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .btn-explorer {
     border: none;
     height: 40px;
@@ -994,10 +999,18 @@ header {
     justify-content: space-between;
     margin-top: 15px;
     font-weight: bold;
+    width: 300px;
+    
 }
 .container-title-price p span {
     text-decoration: line-through;
     color: #858585;
+}
+.container-title-price p:nth-child(1) {
+    width: 250px;
+}
+.container-title-price p:nth-child(2) {
+    text-align: right;
 }
 .boutique-button-plus {
     text-align: center;
@@ -1030,7 +1043,6 @@ header {
 @media screen and (max-width: 600px) {
     .boutique-container {
         padding: 0;
-        margin-top: 60px;
     }
     .boutique-container-bloc {
         margin: 20px auto 0 auto;
@@ -1039,6 +1051,7 @@ header {
         margin: 0 auto;
     }
     .boutique h2 {
+        margin-top: 100px;
         font-size: 35px;
     }
     .boutique p {
@@ -1051,7 +1064,7 @@ header {
 /* SUBSCRIBE */ 
 
 .subscribe {
- height: 300px;
+    height: 300px;
 }
 .subscribe-container {
     width: 100%;
